@@ -7,6 +7,12 @@ body{
     margin:0;
     font-family: 'Lato', sans-serif;
 }
+h6{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    color: #272727CC;
+}
 .text-primary{
     color: #E55473;
 }
@@ -140,6 +146,7 @@ main > section > article{
     font-weight: 400;
     margin: 0;
     margin-top: 24px;
+    color: #272727CC;
 }
 
 
@@ -233,4 +240,38 @@ footer .cpr{
     margin: 0;
     padding: 0;
     margin-top: 32px;
+}
+
+/* bonus section related styles */
+.bonus-section{
+    display: flex;
+    justify-content: center;
+    color: #E55473;
+}
+.bonus-section .section-description, .bonus-section .section-title, .bonus-section li h6{
+    color: #272727;
+}
+.bonus-section-container{
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 80px ;
+}
+.bonus-section header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 124px;
+}
+.bonus-section .facts li{
+    margin: 16px;
+}
+.bonus-section .facts{
+    list-style-type: disc;
+}
+.bonus-section-image{
+    margin: 32px 0;
 }
