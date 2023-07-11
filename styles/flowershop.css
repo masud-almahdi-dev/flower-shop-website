@@ -1,0 +1,19 @@
+/* common styles */
+
+body{
+    margin:0;
+}
+
+
+/* header related styles */
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: #E554731A;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+}
