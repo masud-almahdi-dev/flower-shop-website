@@ -1,9 +1,42 @@
 /* common styles */
+*{
+    box-sizing: border-box;
+}
 
 body{
     margin:0;
+    font-family: 'Lato', sans-serif;
 }
-
+.text-primary{
+    color: #E55473;
+}
+.btn-primary{
+    padding: 20px 43px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #E55473;
+    color: #FFFFFF;
+}
+.btn-primary a{
+    text-decoration: none;
+    color: white;
+}
+.section-title{
+    font-size: 40px;
+    font-weight: 800;
+    color: #272727;
+    margin: 0;
+}
+.section-description{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 24px;
+    color: #27272799;
+    max-width: 594px;
+}
 
 /* header related styles */
 
@@ -11,9 +44,193 @@ body{
     display: flex;
     justify-content: center;
     background-color: #E554731A;
+    margin-bottom: 50px;
 }
 .header-container{
     display: flex;
     align-items: center;
-    max-width: 1440px;
+    justify-content: space-between;
+    width: 1440px;
+}
+.headline-title{
+    font-size: 80px;
+    font-weight: 800;
+    max-width: 708px;
+    margin:0;
+    color: #272727;
+}
+.headline-description{
+    color: #27272799;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 634px;
+    margin: 32px 0;
+}
+.header-image{
+    margin-top: 50px;
+}
+
+
+
+/* section related styles */
+
+main > section{
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main > section > article{
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* featured flower section styles */
+.featured-flowers article{
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.featured-flowers .img-container{
+    border-radius: 300px 300px 0 0;
+    width: 464px;
+    height: 538px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.featured-flowers .flower-1 .img-container{
+    background-color: #A7216226;
+}
+.featured-flowers .flower-2 .img-container{
+    background-color: #0597A026;
+    align-items: center;
+}
+.featured-flowers .flower-3 .img-container{
+    background-color: #477D1126;
+}
+.featured-flowers .img-caption{
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.featured-flowers .img-caption a{
+    color: #272727;
+}
+
+/* services section styles */
+
+.service-container{
+    background-color: #2727270D;
+    display: flex;
+    padding: 87px 175px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.services .service-title{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 24px;
+}
+
+
+/* hot-deal related styles */
+.hotdeal{
+    background-color: #E554730D;
+    display: flex;
+    justify-content: center;
+}
+.hotdeal .deal-container{
+    display: flex;
+}
+.hotdeal .deal-container .section-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.hotdeal .btn-primary{
+    margin-top: 32px;
+}
+.hotdeal .deal-image{
+    margin: 100px 0;
+    width: 50%;
+}
+
+/* instagram images section related styles */
+.instagram article{
+    gap: 24px;
+    margin-top: 48px;
+}
+
+/* latest-deal related container styles */
+.latest-deal-container{
+    background-image: url("../images/Rectangle 9.png");
+    padding: 122px 287px;
+    display: flex;
+    flex-direction: column;
+}
+
+.latest-deal-container .section-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.latest-deal-container .section-description{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+.latest-deal-container form{
+    display: flex;
+    gap: 16px;
+}
+.latest-deal-container form .btn-primary{
+    cursor: pointer;
+}
+.latest-deal-container .email-input{
+    padding: 22px;
+    border-radius: 8px;
+    border: none;
+    width: 700px;
+}
+
+/* footer related styles */
+footer{
+    background-color: #111010;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 128px 0;
+    margin-top: 128px;
+}
+footer .section-title{
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+}
+footer .section-description{
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFFE5;
+}
+footer .cpr{
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF66;
+    margin: 0;
+    padding: 0;
+    margin-top: 32px;
 }
